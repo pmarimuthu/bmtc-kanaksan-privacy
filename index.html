@@ -31,15 +31,34 @@
 
 <h2>2. Data we do NOT collect</h2>
 <ul>
-  <li>We do <strong>not</strong> collect, store, or transmit your personal information.</li>
+  <li>We do <strong>not</strong> collect your name, email address, phone number, or any
+      directly identifying personal information.</li>
   <li>We do <strong>not</strong> collect your device's GPS location.</li>
   <li>We do <strong>not</strong> create user accounts or require any sign-in.</li>
   <li>We do <strong>not</strong> use advertising SDKs or sell data to third parties.</li>
-  <li>We do <strong>not</strong> track your usage behaviour or analytics.</li>
+  <li>We do <strong>not</strong> track your in-app behaviour, search history, or route queries.</li>
 </ul>
 
-<h2>3. Data stored on your device</h2>
-<p>All data the app stores remains exclusively on your device:</p>
+<h2>3. Device identifier</h2>
+<p>The app generates a random unique identifier (UUID) on first launch and stores it in
+   local app storage. This identifier is:</p>
+<ul>
+  <li><strong>Not linked to your hardware</strong> — it is not your IMEI, ANDROID_ID, or any
+      hardware serial number.</li>
+  <li><strong>Not personally identifiable</strong> — it cannot be used to identify you as a
+      natural person.</li>
+  <li><strong>User-controlled</strong> — uninstalling the app permanently deletes this identifier
+      and all associated records.</li>
+</ul>
+<p>This identifier is sent to Firebase (Google) along with: app version, Android OS version,
+   device manufacturer, and device model. This data is used solely for app stability
+   monitoring, crash analysis, and understanding which device types use the app.
+   It is never shared with third parties for advertising or profiling purposes.</p>
+<p>This processing is carried out under our <strong>legitimate interest</strong> in maintaining
+   and improving app quality (Article 6(1)(f) GDPR; Section 4, DPDP Act 2023).</p>
+
+<h2>4. Data stored on your device</h2>
+<p>All other data the app stores remains exclusively on your device:</p>
 <ul>
   <li><strong>Route &amp; stop data</strong> — synced once weekly from the BMTC public API and
       cached in a local Room database for offline use.</li>
@@ -50,7 +69,7 @@
       locally only; it is not transmitted to any external server in this version.</li>
 </ul>
 
-<h2>4. Network communication</h2>
+<h2>5. Network communication</h2>
 <p>The app communicates exclusively with the BMTC public API
    (<code>bmtcmobileapi.karnataka.gov.in</code>) to fetch live bus positions, route
    details, and stop data. No user-identifying information is sent in these requests —
@@ -59,7 +78,7 @@
    This is governed by
    <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</p>
 
-<h2>5. Permissions</h2>
+<h2>6. Permissions</h2>
 <ul>
   <li><strong>INTERNET</strong> — required to fetch live bus data from the BMTC API.</li>
   <li><strong>ACCESS_NETWORK_STATE</strong> — used to check connectivity before making API calls.</li>
@@ -71,7 +90,7 @@
       device location in this version.</li>
 </ul>
 
-<h2>6. Third-party services</h2>
+<h2>7. Third-party services</h2>
 <ul>
   <li><strong>Google Maps SDK</strong> —
       <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
@@ -80,18 +99,21 @@
   <li><strong>Firebase Crashlytics</strong> — collects crash reports (device model, OS version,
       stack trace) to help fix bugs. No personal data is included.
       <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a></li>
+  <li><strong>Firebase Firestore</strong> — stores the pseudonymous device identifier and
+      device metadata described in Section 3. Data is retained for up to 12 months.
+      <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a></li>
 </ul>
 <p>No advertising or behavioural tracking SDKs are included.</p>
 
-<h2>7. Children's privacy</h2>
+<h2>8. Children's privacy</h2>
 <p>This app does not knowingly collect data from children under the age of 13.</p>
 
-<h2>8. Changes to this policy</h2>
+<h2>9. Changes to this policy</h2>
 <p>If we make material changes to this policy, we will update the effective date above
    and post the revised policy at this URL. Continued use of the app after changes
    constitutes acceptance of the updated policy.</p>
 
-<h2>9. Contact</h2>
+<h2>10. Contact</h2>
 <p>For questions or concerns about this privacy policy, contact:
    <a href="mailto:helpdesk@kanaksan.com">Helpdesk Kanaksan</a></p>
 
